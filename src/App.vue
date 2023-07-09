@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import CoustomComponent from './components/CustomComponent.vue'
+import Posts from './components/Posts.vue'
 </script>
 
 <template>
@@ -14,6 +15,8 @@ import CoustomComponent from './components/CustomComponent.vue'
       <CoustomComponent element="h1" ariaLabel="test" :isDisabled="false">
         Hello World</CoustomComponent
       >
+
+      <Posts />
     </div>
   </header>
 

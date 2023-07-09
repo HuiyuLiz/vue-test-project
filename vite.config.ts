@@ -12,8 +12,14 @@ export default defineConfig({
     }
   },
   test: {
+    globals: true,
+    setupFiles: 'src/setup.ts',
     coverage: {
       reporter: ['text', 'json', 'html']
-    }
+    },
+    includeSource: ['src/**/*.{js,ts,vue}']
+  },
+  define: {
+    'import.meta.vitest': 'undefined'
   }
 })
